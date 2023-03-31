@@ -146,10 +146,6 @@
     margin: 0 1rem;
   }
 
-  h2 {
-    line-height: 3.125rem;
-  }
-
   .About button {
     box-sizing: border-box;
     background-color: #1a2236;
@@ -323,7 +319,7 @@
   }
 
   button:hover {
-    color:white;
+    color: white;
     background-color: silver;
   }
 }
