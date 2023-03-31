@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   body {
     margin: 0;
   }
@@ -21,6 +21,12 @@
   }
 
   h1 {
+    font-size: 3.125rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 100%;
+  }
+
+  h2 {
     font-size: 3.125rem;
     font-family: 'Playfair Display', serif;
     line-height: 100%;
@@ -87,6 +93,8 @@
   .work div {
     background-color: #1a2236;
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .work img {
@@ -312,5 +320,10 @@
     width: 20rem;
     height: 20rem;
     filter: opacity(50%);
+  }
+
+  button:hover {
+    color:white;
+    background-color: silver;
   }
 }
