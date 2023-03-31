@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   body {
     margin: 0;
   }
@@ -81,6 +81,16 @@
     margin: 1rem 1rem;
   }
 
+  .Collaboration:hover {
+    color: #1a2236;
+    border: 1px solid #1a2236;
+    background-color: white;
+  }
+
+  .Collaboration:active {
+    border: 2px solid #1a2236;
+  }
+
   .Projects {
     padding: 2rem 1rem;
   }
@@ -152,6 +162,26 @@
     color: white;
     height: 3.125rem;
     width: 100%;
+  }
+
+  .projects button:hover {
+    color: #1a2236;
+    border: 1px solid #1a2236;
+    background-color: white;
+  }
+
+  .projects button:active {
+    border: 2px solid #1a2236;
+  }
+
+  .About button:hover {
+    color: #1a2236;
+    border: 1px solid #1a2236;
+    background-color: white;
+  }
+
+  .About button:active {
+    border: 2px solid #1a2236;
   }
 
   .knowledge {
@@ -316,10 +346,5 @@
     width: 20rem;
     height: 20rem;
     filter: opacity(50%);
-  }
-
-  button:hover {
-    color: white;
-    background-color: silver;
   }
 }
