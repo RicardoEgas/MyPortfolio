@@ -24,12 +24,14 @@
     font-size: 3.125rem;
     font-family: 'Playfair Display', serif;
     line-height: 100%;
+    font-weight: 400;
   }
 
   h2 {
     font-size: 3.125rem;
     font-family: 'Playfair Display', serif;
     line-height: 100%;
+    font-weight: 400;
   }
 
   #headline h1 {
@@ -269,18 +271,36 @@
     width: 100%;
     height: 3.25rem;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 23px 16px 8px;
+    color: #1a2236;
   }
 
   #email {
     width: 100%;
     height: 3.25rem;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 23px 16px 5px;
+    color: #1a2236;
   }
 
   #comment-box {
     width: 100%;
     height: 7rem;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 16px 14px 77px;
+    color: #7d7c84;
   }
 
   footer {
@@ -301,7 +321,7 @@
   .font-links {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: x-large;
   }
@@ -346,5 +366,18 @@
     width: 20rem;
     height: 20rem;
     filter: opacity(50%);
+  }
+
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #7d7c84;
   }
 }

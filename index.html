@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/86098cddac.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -154,33 +156,37 @@
           <div class="get-contact">
             <img src="images/Shape (1).png" alt="image4" class="image4">
             <img src="images/Shape (2).png" alt="image5" class="image5">
+
+            <div class="contact-page">
             <h1>Get Started</h1>
-            <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch</p>
-            <form class="contact-form">
+            <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="contact-form">
             <div>
               <label id="name-label">Your name</label>
               <br>
-              <input id="name"  type="text" placeholder="Ricardo"/>
+              <input name="name" id="name" type="text" placeholder="Ricardo" maxlength="30" required/>
             </div>
             <div>
               <label id="email-label">Your email</label>
               <br>
-              <input id="email" type="email" placeholder="rj_egas@..."/>
+              <input name="email" id="email" type="email" placeholder="rj_egas@..." required/>
             </div>
             <div>
               <label>Your message</label>
               <br>
-              <textarea name="comments" id="comment-box" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+              <textarea name="comments" id="comment-box" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
             </div>
             <div>
               <button type="button" class="Collaboration">Start Collaboration</button>
             </div>
          </div>
+        </div>
      </div>
     </section>
     <footer>
         <div class="resume">Get my Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
         <div class="font-links">
+            <i class="fa-brands fa-stack-overflow"></i>
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin"></i>
