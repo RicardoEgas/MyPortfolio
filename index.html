@@ -153,32 +153,33 @@
                 <img src="images/light.png" alt="light-bulb" class="bulb">
             </ul>
 
-            <div class="get-contact">
-                <img src="images/Shape (1).png" alt="image4" class="image4">
-                <img src="images/Shape (2).png" alt="image5" class="image5">
-                <h1>Get Started</h1>
-                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch</p>
-                <form class="contact-form">
-                    <div>
-                        <label id="name-label">Your name</label>
-                        <br>
-                        <input id="name" type="text" placeholder="Ricardo" />
-                    </div>
-                    <div>
-                        <label id="email-label">Your email</label>
-                        <br>
-                        <input id="email" type="email" placeholder="rj_egas@..." />
-                    </div>
-                    <div>
-                        <label>Your message</label>
-                        <br>
-                        <textarea name="comments" id="comment-box" cols="30" rows="10"
-                            placeholder="Enter your message here..."></textarea>
-                    </div>
-                    <div>
-                        <button type="button" class="Collaboration">Start Collaboration</button>
-                    </div>
+          <div class="get-contact">
+            <img src="images/Shape (1).png" alt="image4" class="image4">
+            <img src="images/Shape (2).png" alt="image5" class="image5">
+
+            <div class="contact-page">
+            <h1>Get Started</h1>
+            <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+            <form action="https://formspree.io/f/{form_id}" method="post" class="contact-form">
+            <div>
+              <label id="name-label">Your name</label>
+              <br>
+              <input name="name" id="name" type="text" placeholder="Ricardo" maxlength="30" required/>
             </div>
+            <div>
+              <label id="email-label">Your email</label>
+              <br>
+              <input name="email" id="email" type="email" placeholder="rj_egas@..." required/>
+            </div>
+            <div>
+              <label>Your message</label>
+              <br>
+              <textarea name="comments" id="comment-box" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
+            </div>
+            <div>
+              <button type="button" class="Collaboration">Start Collaboration</button>
+            </div>
+         </div>
         </div>
     </section>
     <footer>
