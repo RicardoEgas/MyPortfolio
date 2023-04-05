@@ -182,6 +182,12 @@ GitHub Pages
 - Twitter: [@twitterhandle](https://twitter.com/RjEgas)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ricardo-egas-952125136)
 
+👤 **Evans Nyamekye**
+
+- GitHub: [@githubhandle](https://github.com/evansnyamekye)
+- Twitter: [@twitterhandle](https://twitter.com/nyamekye2131)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/evans-kofi-nyamekye-1980a4117/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
