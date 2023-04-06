@@ -61,7 +61,9 @@ After you're finished please remove all the comments and instructions!
 # 📖 [My Porfolio] <a name="about-project"></a>
 
 
+
 My Portfolio is a project for Microverse which consists in completing the build of a mobile and Desktop page replicating a template from Figma.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -99,6 +101,7 @@ My Portfolio is a project for Microverse which consists in completing the build 
 - **[Flexbox]**
 - **[MediaQuery]**
 - **[CSSGrid]**
+- **[HTMLForms]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,6 +184,12 @@ GitHub Pages
 - Twitter: [@twitterhandle](https://twitter.com/RjEgas)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ricardo-egas-952125136)
 
+👤 **Evans Nyamekye**
+
+- GitHub: [@githubhandle](https://github.com/evansnyamekye)
+- Twitter: [@twitterhandle](https://twitter.com/nyamekye2131)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/evans-kofi-nyamekye-1980a4117/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -198,6 +207,8 @@ GitHub Pages
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
+
+<a name="contributing" href="https://github.com/evansnyamekye">evansnyamekye</a>
 
 Contributions, issues, and feature requests are welcome!
 
