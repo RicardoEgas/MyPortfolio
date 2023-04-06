@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 375px) {
   body {
     margin: 0;
   }
@@ -13,6 +13,10 @@
     align-items: flex-end;
   }
 
+  .portfolio-links {
+    display: none;
+  }
+
   .Menu-line {
     width: 1.25rem;
     height: 0.125rem;
@@ -22,30 +26,31 @@
 
   h1 {
     font-size: 3.125rem;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     line-height: 100%;
   }
 
   h2 {
     font-size: 3.125rem;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     line-height: 100%;
   }
 
   #headline h1 {
     margin: 0 1rem;
-    word-spacing: 30rem;
+    word-spacing: 100rem;
   }
 
   p {
     color: #1a2236;
     line-height: 1.313rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
+    font-size: 0.875rem;
   }
 
   .Intro p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 0.875rem;
     line-height: 1.5rem;
     margin-left: 1rem;
@@ -70,6 +75,7 @@
 
   .image3 {
     margin: 0;
+    width: 100%;
   }
 
   .Collaboration {
@@ -115,7 +121,7 @@
   h3 {
     color: white;
     line-height: 80%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     margin-bottom: 0;
   }
@@ -131,7 +137,7 @@
   .tools li {
     background-color: #98dede;
     padding: 0.375rem 0.625rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
   }
 
@@ -139,17 +145,6 @@
     margin-left: 1.25rem;
     display: flex;
     flex-direction: column;
-  }
-
-  .projects button {
-    color: white;
-    border: 1px solid white;
-    background-color: #1a2236;
-    width: 11.125rem;
-    height: 2.75rem;
-    line-height: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
   }
 
   .About {
@@ -162,6 +157,17 @@
     color: white;
     height: 3.125rem;
     width: 100%;
+  }
+
+  .projects button {
+    color: white;
+    border: 1px solid white;
+    background-color: #1a2236;
+    width: 11.125rem;
+    height: 2.75rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
   }
 
   .projects button:hover {
@@ -195,7 +201,7 @@
     height: 18.063rem;
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     line-height: 3;
     font-size: 1.25rem;
@@ -209,7 +215,7 @@
     height: 18.063rem;
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     line-height: 3;
     font-size: 1.25rem;
@@ -223,7 +229,7 @@
     height: 18.063rem;
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     line-height: 4;
     font-size: 1.125rem;
@@ -253,7 +259,7 @@
   }
 
   #title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-size: 1.25rem;
     color: white;
@@ -263,24 +269,57 @@
 
   .get-contact {
     background-color: #f9f9fa;
+    padding-left: 1rem;
   }
 
   #name {
     width: 100%;
     height: 3.25rem;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 23px 16px 8px;
+    border: 1px solid #dfdfe0;
+  }
+
+  #name::placeholder {
+    color: #1a2236;
   }
 
   #email {
     width: 100%;
     height: 3.25rem;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 23px 16px 5px;
+    color: #1a2236;
+    border: 1px solid #1a2236;
+  }
+
+  #email::placeholder {
+    color: #1a2236;
   }
 
   #comment-box {
     width: 100%;
     height: 7rem;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 16px 14px 77px;
+    color: #7d7c84;
+    border: 1px solid #dfdfe0;
+  }
+
+  #comment-box::placeholder {
+    color: #7d7c84;
   }
 
   footer {
@@ -290,7 +329,7 @@
 
   .resume {
     color: #92dcdc;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 16px;
@@ -301,7 +340,7 @@
   .font-links {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: x-large;
   }
@@ -346,5 +385,373 @@
     width: 20rem;
     height: 20rem;
     filter: opacity(50%);
+  }
+
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #7d7c84;
+  }
+
+  .grid-picture {
+    display: none;
+  }
+
+  .image6 {
+    display: none;
+  }
+
+  .image7 {
+    display: none;
+  }
+
+  .work-desktop {
+    display: none;
+  }
+
+  .Project-Desktop {
+    display: none;
+  }
+}
+
+/* Desktop version */
+
+@media (min-width: 768px) {
+  #header {
+    border-bottom: 1px solid #dddfe6;
+    height: 6.25rem;
+  }
+
+  .Menu {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+  }
+
+  .portfolio-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .Menu-line {
+    display: none;
+  }
+
+  .nav-link a {
+    text-decoration: none;
+    padding: 1rem;
+    color: #1a2236;
+  }
+
+  .image1 {
+    display: none;
+  }
+
+  .image2 {
+    display: none;
+  }
+
+  .image3 {
+    display: none;
+  }
+
+  .image4 {
+    display: none;
+  }
+
+  .image5 {
+    display: none;
+  }
+
+  .Project-Mobile {
+    display: none;
+  }
+
+  #headline {
+    display: flex;
+  }
+
+  .Intro {
+    width: 50%;
+    position: relative;
+    height: 100%;
+    padding-top: 200px;
+  }
+
+  .headline-pic {
+    position: relative;
+    width: 50%;
+    background-image: url(images/Thur.png);
+    height: 54.813rem;
+    margin-bottom: 13rem;
+  }
+
+  h1 {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  .Collaboration {
+    width: 15.875rem;
+  }
+
+  /* Desktop works */
+  .Project-Desktop {
+    display: block;
+  }
+
+  .Projects {
+    position: relative;
+    display: inline-block;
+    font-size: 110px;
+    line-height: 110px;
+    transform: rotate(-90deg);
+  }
+
+  .project-pictures {
+    position: relative;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 33% 10rem auto;
+    grid-template-rows: 100%;
+  }
+
+  .projects button {
+    background-color: white;
+    color: #1a2236;
+    width: 11.125rem;
+    height: 2.75rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid #1a2236;
+  }
+
+  .big-laptop {
+    width: 100%;
+    background-color: #1a2236;
+    height: 25rem;
+  }
+
+  .big-laptop img {
+    width: 100%;
+    height: 13rem;
+  }
+
+  .work {
+    display: none;
+  }
+
+  .work-desktop {
+    display: block;
+  }
+
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .grid1 {
+    height: 16rem;
+    width: 29rem;
+    position: relative;
+    bottom: -6.5rem;
+  }
+
+  .grid2 {
+    width: 32.5rem;
+  }
+
+  .grid3 {
+    padding-left: 1.25rem;
+    background-color: #1a2236;
+    width: 100%;
+    position: relative;
+    bottom: -3.25rem;
+  }
+
+  .grid3 img {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    bottom: -2.5rem;
+  }
+
+  .grid3 button {
+    background-color: white;
+    color: #1a2236;
+    width: 11.125rem;
+    height: 2.75rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border: 1px solid #1a2236;
+  }
+
+  .About button {
+    width: 15.875rem;
+  }
+
+  .grid3 button:hover {
+    background-color: #1a2236;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .grid3 button:active {
+    border: 2px solid white;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 30%;
+    margin-bottom: 10rem;
+  }
+
+  .grid4 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid5 {
+    position: relative;
+    bottom: -9.5rem;
+  }
+
+  .projects button:hover {
+    background-color: #1a2236;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .projects button:active {
+    border: 2px solid white;
+  }
+
+  /* Desktop About */
+
+  .About {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6rem;
+    margin-bottom: 10rem;
+  }
+
+  .About-container {
+    margin-right: 6rem;
+  }
+
+  .knowledge {
+    display: grid;
+    grid-template-columns: 18.063rem 18.063rem;
+    grid-template-rows: 18.063rem 18.063rem;
+    margin-left: 10rem;
+  }
+
+  .grid-picture {
+    display: block;
+    position: relative;
+  }
+
+  .grid-picture img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .About ul {
+    padding: 0;
+  }
+
+  .About h2 {
+    font-size: 6.875rem;
+    margin: 1.875rem auto;
+  }
+
+  .get-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20rem;
+    position: relative;
+  }
+
+  .get-contact h2 {
+    font-size: 6.875rem;
+    margin-bottom: 2.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.188rem;
+  }
+
+  #name {
+    width: 20rem;
+    padding: 18px 18px;
+  }
+
+  #email {
+    width: 20rem;
+    padding: 18px 18px;
+  }
+
+  #comment-box {
+    width: 42.188rem;
+  }
+
+  .get-contact p {
+    letter-spacing: -1;
+    margin-bottom: 2.5rem;
+    width: 70%;
+  }
+
+  .container-button {
+    margin: auto 13rem;
+    margin-bottom: 10rem;
+  }
+
+  .image6 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+
+  .image7 {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+  }
+
+  /* Desktop Footer */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .resume {
+    margin-left: 10rem;
+  }
+
+  .font-links {
+    justify-content: space-evenly;
+    width: 27rem;
   }
 }
