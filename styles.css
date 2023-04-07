@@ -729,9 +729,13 @@
     padding: 18px 18px;
   }
 
+  .textbox {
+    width: 100%;
+  }
+
   #comment-box {
-    display: inline-block;
-    width: 42.188rem;
+    width: 100%;
+    max-width: 42.188rem;
   }
 
   .get-contact p {
