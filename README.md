@@ -61,7 +61,9 @@ After you're finished please remove all the comments and instructions!
 # 📖 [My Porfolio] <a name="about-project"></a>
 
 
-My Portfolio is part of project for Microverse which consists in completing the build of a mobile page replicating a template from Figma.
+
+My Portfolio is a project for Microverse which consists in completing the build of a mobile and Desktop page replicating a template from Figma.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
