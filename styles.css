@@ -603,6 +603,7 @@
 
   .About button {
     width: 15.875rem;
+    margin-top: 1rem;
   }
 
   .grid3 button:hover {
