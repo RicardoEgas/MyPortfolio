@@ -99,6 +99,10 @@
     border: 2px solid #1a2236;
   }
 
+  .Project-Mobile {
+    margin: 1rem 1rem;
+  }
+
   .Projects {
     padding: 2rem 1rem;
   }
@@ -486,6 +490,7 @@
     position: relative;
     height: 100%;
     padding-top: 200px;
+    padding-left: 9rem;
   }
 
   .headline-pic {
@@ -499,6 +504,7 @@
   h1 {
     font-size: 110px;
     line-height: 110px;
+    padding-bottom: 2rem;
   }
 
   .Collaboration {
@@ -559,23 +565,22 @@
 
   .grid-container1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.8fr 1.2fr 0.8fr;
     grid-template-rows: auto;
   }
 
   .grid1 {
     height: 16rem;
-    width: 29rem;
-    position: relative;
-    bottom: -6.5rem;
+    width: 100%;
+    align-self: end;
+    justify-self: end;
   }
 
   .grid2 {
-    width: 32.5rem;
+    width: 100%;
   }
 
   .grid3 {
-    padding-left: 1.25rem;
     background-color: #1a2236;
     width: 100%;
     position: relative;
@@ -585,8 +590,15 @@
   .grid3 img {
     position: relative;
     width: 100%;
-    height: 80%;
-    bottom: -2.5rem;
+    height: 75%;
+  }
+
+  .grid3 h3 {
+    margin-left: 1rem;
+  }
+
+  .grid3 .tools {
+    margin-left: 1rem;
   }
 
   .grid3 button {
@@ -599,6 +611,8 @@
     font-weight: 500;
     font-size: 18px;
     border: 1px solid #1a2236;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
   }
 
   .About button {
@@ -621,6 +635,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 70% 30%;
     margin-bottom: 10rem;
+    position: relative;
   }
 
   .grid4 {
@@ -629,8 +644,9 @@
   }
 
   .grid5 {
-    position: relative;
-    bottom: -9.5rem;
+    align-self: end;
+    justify-self: end;
+    width: 100%;
   }
 
   .projects button:hover {
@@ -700,6 +716,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2.188rem;
+    max-width: 100%;
   }
 
   #name {
@@ -713,6 +730,7 @@
   }
 
   #comment-box {
+    display: inline-block;
     width: 42.188rem;
   }
 
