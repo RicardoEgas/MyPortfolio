@@ -48,18 +48,6 @@
     color: black;
   }
 
-  .Menu.active .burger > div:nth-child(2) {
-    visibility: hidden;
-  }
-
-  .Menu.active .burger > div:nth-child(1) {
-    transform: translateY(6.3px) rotate(45deg);
-  }
-
-  .Menu.active .burger > div:nth-child(3){
-    transform: translateY(-6.3px) rotate(-45deg);
-  }
-
   .Menu-line {
     width: 1.25rem;
     height: 0.125rem;
@@ -804,6 +792,18 @@
     display: block;
     bottom: 0;
     right: 0;
+  }
+
+  .Menu.active .burger > div:nth-child(2) {
+    visibility: hidden;
+  }
+
+  .Menu.active .burger > div:nth-child(1) {
+    transform: translateY(6.3px) rotate(45deg);
+  }
+
+  .Menu.active .burger > div:nth-child(3) {
+    transform: translateY(-6.3px) rotate(-45deg);
   }
 
   /* Desktop Footer */
