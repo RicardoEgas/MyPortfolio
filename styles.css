@@ -26,6 +26,8 @@
     text-align: center;
   }
 
+/* Use "active class from javaScript */
+
   .Menu.active .burger {
     position: absolute;
     right: 0;
