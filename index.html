@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/86098cddac.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Playfair+Display&display=swap"
         rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -21,16 +22,18 @@
       
         
 
-        <nav class="Menu">   
-        <div class="Menu-line"></div>
-        <div class="Menu-line"></div>
-        <div class="Menu-line"></div>
+        <nav class="Menu"> 
+          <div class="burger">  
+            <div class="Menu-line"></div>
+            <div class="Menu-line"></div>
+            <div class="Menu-line"></div>
+          </div>  
         <ul class="portfolio-links">
 
-            <li class="nav-link"><a href="">Hello</a></li>
-            <li class="nav-link"><a href="">Portfolio</a></li>
-            <li class="nav-link"><a href="">About</a></li>
-            <li class="nav-link"><a href="">Contact</a></li>
+            <li class="nav-link"><a href="#headline">Hello</a></li>
+            <li class="nav-link"><a href="#allProjects">Portfolio</a></li>
+            <li class="nav-link"><a href="#About-section">About</a></li>
+            <li class="nav-link"><a href="#Contacts">Contact</a></li>
          </ul>
         </nav>   
         
@@ -55,8 +58,9 @@
              
             </section>
 
-
-         <h2 class="Project-Mobile">Projects</h2>
+ <div id="allProjects"></div>
+         
+    <h2 class="Project-Mobile">Projects</h2>
          
   <div class="Project-Desktop"> 
     <div class="project-pictures">
@@ -98,6 +102,7 @@
 
       </div>
     </section>
+
         
 
     <section class="work">
@@ -181,6 +186,9 @@
 
         </div>
     </section>
+
+    <div id="About-section"></div>
+
     <section class="About">
       <div class="About-container">
         <h2>About</h2>
@@ -218,7 +226,7 @@
         </ul>
         <div class="grid-picture"><img src="images/image_dots_with_teal.png" alt=""></div>
     </section>
-
+    <section id="Contacts">
           <div class="get-contact">
             <img src="images/Shape (1).png" alt="" class="image4">
             <img src="images/Shape (2).png" alt="" class="image5">
@@ -250,6 +258,7 @@
             </div>
          </div>
      </div>
+    </section>
     
     <footer>
         <div class="resume">Get my Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></div>

@@ -13,8 +13,46 @@
     align-items: flex-end;
   }
 
+  .burger {
+    padding: 1rem;
+  }
+
+  .Menu.active {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-image: url(images/mobileThur.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100% auto;
+    text-align: center;
+  }
+
+  .Menu.active .burger {
+    position: absolute;
+    right: 0;
+  }
+
   .portfolio-links {
     display: none;
+  }
+
+  .Menu.active .portfolio-links {
+    display: block;
+    line-height: 3;
+    list-style: none;
+    margin-top: 9rem;
+    padding: 0;
+  }
+
+  .Menu.active .portfolio-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: sans-serif;
   }
 
   .Menu-line {
@@ -68,6 +106,14 @@
     position: absolute;
     left: 2.188rem;
     top: 0;
+  }
+
+  header.active .image1 {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(80%) saturate(744%) hue-rotate(176deg) brightness(95%) contrast(93%);
+  }
+
+  header.active .image2 {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(17%) saturate(463%) hue-rotate(326deg) brightness(104%) contrast(106%);
   }
 
   .Intro {
@@ -424,6 +470,18 @@
 
   .Project-Desktop {
     display: none;
+  }
+
+  .Menu.active .burger > div:nth-child(2) {
+    visibility: hidden;
+  }
+
+  .Menu.active .burger > div:nth-child(1) {
+    transform: translateY(6.3px) rotate(45deg);
+  }
+
+  .Menu.active .burger > div:nth-child(3) {
+    transform: translateY(-6.3px) rotate(-45deg);
   }
 }
 
