@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Playfair+Display&display=swap"
         rel="stylesheet">
     <script defer src="script.js"></script>
+    <script defer src="forms.js"></script>
+    <script defer src="storage.js"></script>
 </head>
 
 <body>
@@ -58,7 +60,8 @@
              
             </section>
 
- <div id="allProjects"></div>
+ <div id="allProjects">
+ </div>
          
     <h2 class="Project-Mobile">Projects</h2>
          
@@ -74,7 +77,7 @@
               <li>Ruby on Rails</li>
               <li>Javascript</li>
             </ul>
-            <button type="button">See this project →</button>
+            <button type="button" data-modal-target>See this project →</button>
           </div>
         </div>
      </div>
@@ -90,7 +93,7 @@
               <li>Ruby on Rails</li>
               <li>+1</li>
             </ul>
-            <button type="button">See this project →</button>
+            <button type="button" data-modal-target>See this project →</button>
             <img src="images/Rectangle 21 (4).png" alt="laptop image">
         </div>
       </div>
@@ -118,7 +121,7 @@
                     <li>Ruby on Rails</li>
                     <li>Javascript</li>
                 </ul>
-                <button type="button">See this project →</button>
+                <button type="button" data-modal-target>See this project →</button>
             </div>
         </div>
         <div class="gridlaptops">
@@ -131,7 +134,7 @@
                     <li>Ruby on Rails</li>
                     <li>Javascript</li>
                 </ul>
-                <button type="button">See this project →</button>
+                <button type="button" data-modal-target>See this project →</button>
             </div>
         </div>
         <div class="laptop3">
@@ -143,7 +146,7 @@
                     <li>Ruby on Rails</li>
                     <li>Javascript</li>
                 </ul>
-                <button type="button">See this project →</button>
+                <button type="button" data-modal-target>See this project →</button>
             </div>
         </div>
         <div class="laptop4">
@@ -155,7 +158,7 @@
                     <li>Ruby on Rails</li>
                     <li>Javascript</li>
                 </ul>
-                <button type="button">See this project →</button>
+                <button type="button"data-modal-target>See this project →</button>
             </div>
         </div>
         <div class="laptop5">
@@ -167,7 +170,7 @@
                     <li>Ruby on Rails</li>
                     <li>Javascript</li>
                 </ul>
-                <button type="button">See this project →</button>
+                <button type="button" data-modal-target>See this project →</button>
             </div>
         </div>
         <div class="laptop6">
@@ -180,7 +183,7 @@
                 <li>Ruby on Rails</li>
                 <li>Javascript</li>
             </ul>
-            <button type="button">See this project →</button>
+            <button type="button" data-modal-target>See this project →</button>
         </div>
     </div>
 
@@ -252,7 +255,7 @@
               <br>
               <textarea name="comments" id="comment-box" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500" required></textarea>
             </div>
-
+            <p id="attention"></p>
             <div class="container-button">
               <button type="submit" class="Collaboration">Start Collaboration</button>
             </div>
