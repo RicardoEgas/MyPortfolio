@@ -497,6 +497,7 @@
     max-height: 90%;
     padding-left: 0.688rem;
     padding-right: 1rem;
+    overflow-y: scroll;
   }
 
   .cancel {
@@ -551,12 +552,13 @@
     background-color: white;
     color: #1a2236;
     border: 1px #1a2236 solid;
-    margin: 1.8rem auto;
+    margin: 1.3rem auto;
     width: 80%;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
+    max-height: 3rem;
   }
 
   .see-source {
@@ -564,13 +566,14 @@
     background-color: white;
     color: #1a2236;
     border: 1px #1a2236 solid;
-    margin: auto;
+    margin: 1.3rem auto;
     width: 80%;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 1.3rem;
+    font-size: 15px;
+    max-height: 3rem;
+    min-width: fit-content;
   }
 
   #modal i {
@@ -580,14 +583,16 @@
     top: -1.5rem;
     font-size: x-large;
   }
-}
 
-#modal i {
-  display: flex;
-  justify-content: end;
-  position: relative;
-  top: -1.5rem;
-  font-size: x-large;
+  #modal button:hover {
+    background-color: #1a2236;
+    color: white;
+    border: 1px solid white;
+  }
+
+  #modal button:active {
+    border: 2px solid white;
+  }
 }
 
 /* Desktop version */
@@ -974,12 +979,14 @@
 
   .see-live {
     display: inline-block;
-    width: 30%;
+    width: 35%;
     margin-left: 15%;
+    text-align: left;
   }
 
   .see-source {
     display: inline-block;
-    width: 30%;
+    width: 35%;
+    text-align: left;
   }
 }
