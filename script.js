@@ -16,14 +16,14 @@ function close() {
 burger.addEventListener('click', toggleMenu);
 links.forEach((n) => n.addEventListener('click', close));
 
-///Pop-ups////
+/// Pop-ups////
 
 const details = [
   {
     id: 1,
     name: 'Project name gors here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: "images/Group 109.png",
+    image: 'images/Group 109.png',
     technologies: ['Html/CSS', 'Ruby on Rails', 'Javascript'],
     liveVersion: '#',
     source: '#',
@@ -32,7 +32,7 @@ const details = [
     id: 2,
     name: 'Project name gors here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: "images/Group 109.png",
+    image: 'images/Group 109.png',
     technologies: ['Html/CSS', 'Ruby on Rails', 'Javascript'],
     liveVersion: '#',
     source: '#',
@@ -41,7 +41,7 @@ const details = [
     id: 3,
     name: 'Project name gors here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: "images/Group 109.png",
+    image: 'images/Group 109.png',
     technologies: ['Html/CSS', 'Ruby on Rails', 'Javascript'],
     liveVersion: '#',
     source: '#',
@@ -50,7 +50,7 @@ const details = [
     id: 4,
     name: 'Project name gors here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: "images/Group 109.png",
+    image: 'images/Group 109.png',
     technologies: ['Html/CSS', 'Ruby on Rails', 'Javascript'],
     liveVersion: '#',
     source: '#',
@@ -59,7 +59,7 @@ const details = [
     id: 5,
     name: 'Project name gors here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: "images/Group 109.png",
+    image: 'images/Group 109.png',
     technologies: ['Html/CSS', 'Ruby on Rails', 'Javascript'],
     liveVersion: '#',
     source: '#',
@@ -68,7 +68,7 @@ const details = [
     id: 6,
     name: 'Project name gors here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: "images/Group 109.png",
+    image: 'images/Group 109.png',
     technologies: ['Html/CSS', 'Ruby on Rails', 'Javascript'],
     liveVersion: '#',
     source: '#',
@@ -76,73 +76,48 @@ const details = [
 ];
 
 const projects = document.getElementById('allProjects');
-const images = details.map(function(detail){
-  return detail['image'];
-  });
+const images = details.map((detail) => detail.image);
 
-const names = details.map(function(detail){
-    return detail['name'];
-    });
-  
-const technologies = details.map(function(detail){
-      return detail['technologies'];
-      });
+const names = details.map((detail) => detail.name);
 
-const description = details.map(function(detail){
-        return detail['description'];
-        });
+const technologies = details.map((detail) => detail.technologies);
 
- var i = 0;   
+const description = details.map((detail) => detail.description);
+
+const z = 0;
 
 function openModal() {
-  
-
-projects.style.display = "block";
-projects.insertAdjacentHTML("beforeend", `<div id="modal">
+  projects.style.display = 'block';
+  projects.insertAdjacentHTML('beforeend', `<div id="modal">
             <div class="cancel"><img src="images/ic_cross.jpg" alt=""></div>   
-            <h2 class="title-modal">${names[i]}</h2>
+            <h2 class="title-modal">${names[z]}</h2>
             <ul class="tech-flex">
-                <li class="Html-css">${technologies[i][0]}</li>
-                <li class="Ruby">${technologies[i][1]}</li>
-                <li class="Javascript">${technologies[i][2]}</li>
+                <li class="Html-css">${technologies[z][0]}</li>
+                <li class="Ruby">${technologies[z][1]}</li>
+                <li class="Javascript">${technologies[z][2]}</li>
             </ul>
-            <div class="modal-image"><img src="${images[i]}" alt="project-image-desktop"></div>
-            <div class="descript">${description[i]}</div>
+            <div class="modal-image"><img src="${images[z]}" alt="project-image-desktop"></div>
+            <div class="descript">${description[z]}</div>
             <button class="see-live">
                 See Live <i class="fa-sharp fa-light fa-arrow-up-right-from-square"></i>
             </button>
             <button class="see-source">
             See Source<i class="fa-brands fa-github"></i>
             </button>
-</div>`); 
-if (i>detail.length) {
-  i++;}
-
+</div>`);
+  if (z > details.length) {
+    z += 1;
+  }
 }
 
-
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
-const cancel = document.getElementById('cancel');
 
+openModalButtons.forEach((button) => button.addEventListener('click', openModal));
 
+document.addEventListener('click', (e) => {
+  const target = e.target.closest('.cancel');
 
-
-openModalButtons.forEach((button) =>button.addEventListener('click', openModal));
-
-
-document.addEventListener("click", function(e){
-  const target = e.target.closest(".cancel"); 
-
-  if(target){
+  if (target) {
     projects.innerHTML = '';
   }
 });
-
-for (var i = 0, j = images.length; i < j; i++) {
-  var img = document.createElement('img');
-  img.src = images[i];
-  container.appendChild(img);
-}
-
- 
-
