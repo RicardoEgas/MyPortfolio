@@ -84,7 +84,7 @@ const technologies = details.map((detail) => detail.technologies);
 
 const description = details.map((detail) => detail.description);
 
-const z = 0;
+let z = 0;
 
 function openModal() {
   projects.style.display = 'block';

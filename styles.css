@@ -489,14 +489,14 @@
   }
 
   #modal {
-  position: static;
-  border: 1px solid black;
-  z-index: 1000;
-  background-color: white;
-  max-width: 100%;
-  max-height: 90%;
-  padding-left: 0.688rem;
-  padding-right: 1rem;
+    position: static;
+    border: 1px solid black;
+    z-index: 1000;
+    background-color: white;
+    max-width: 100%;
+    max-height: 90%;
+    padding-left: 0.688rem;
+    padding-right: 1rem;
   }
 
   .cancel {
