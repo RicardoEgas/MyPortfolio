@@ -582,13 +582,13 @@
   }
 }
 
-  #modal i {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    top: -1.5rem;
-    font-size: x-large;
-  }
+#modal i {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: -1.5rem;
+  font-size: x-large;
+}
 
 /* Desktop version */
 
