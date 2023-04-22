@@ -110,7 +110,7 @@ My Portfolio is a project for Microverse which consists in completing the build 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Coming Soon]()
+- [https://ricardoegas.github.io/MyPortfolio/]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,7 +171,6 @@ You can deploy this project using:
 
 GitHub Pages
 
-link - https://ricardoegas.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
