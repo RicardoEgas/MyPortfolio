@@ -6,7 +6,7 @@ function emailError() {
   const errors = [];
 
   if (email !== email.toLowerCase()) {
-    errors.push('Email should not have upper case characters!');
+    errors.push('Error: Email should not have upper case characters!');
   }
   return errors;
 }
@@ -17,8 +17,8 @@ function Validation() {
     return true;
   }
 
-  attention.innerHTML = `Errors: ${errors.join('')}`;
+  attention.innerHTML = `${errors.join('')}`;
   return false;
 }
 
-contactForm.onsubmit = function run() { return Validation(); };
+contactForm.onsubmit = function run() { return Validation() };
