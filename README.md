@@ -192,6 +192,9 @@ link - https://ricardoegas.github.io/
 - Twitter: [@twitterhandle](https://twitter.com/nyamekye2131)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/evans-kofi-nyamekye-1980a4117/)
 
+- GitHub: [mumbereh](https://github.com/mumbereh)
+- Twitter: [@mumberehabert1](https://twitter.com/mumberehabert1)
+- LinkedIn: [Mumbere Habert](https://www.linkedin.com/in/mumbere-habert-33898a255/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
