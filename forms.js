@@ -12,12 +12,11 @@ function emailError() {
 }
 
 contactForm.onsubmit = function run() {
+  const errors = emailError();
+  if (errors.length === 0) {
+    return true;
+  }
 
-    const errors = emailError();
-    if (errors.length === 0) {
-      return true;
-    }
-  
-    attention.innerHTML = `${errors.join('')}`;
-    return false;
-  };
+  attention.innerHTML = `${errors.join('')}`;
+  return false;
+};
