@@ -6,19 +6,17 @@ function emailError() {
   const errors = [];
 
   if (email !== email.toLowerCase()) {
-    errors.push('Email should not have upper case characters!');
+    errors.push('Attention: Email should not have upper case characters!');
   }
   return errors;
 }
 
-function Validation() {
+contactForm.onsubmit = function run() {
   const errors = emailError();
   if (errors.length === 0) {
     return true;
   }
 
-  attention.innerHTML = `Errors: ${errors.join('')}`;
+  attention.innerHTML = `${errors.join('')}`;
   return false;
-}
-
-contactForm.onsubmit = function run() { return Validation(); };
+};
