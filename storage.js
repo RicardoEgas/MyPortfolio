@@ -4,11 +4,11 @@ const emailId = document.getElementById('email');
 const commentId = document.getElementById('comment-box');
 
 
-const Details = JSON.parse(localStorage.getItem('contactInfo'));
-if (Details) {
-  nameId.value = Details.name;
-  emailId.value = Details.email;
-  commentId.value = Details.comment;
+const formDetails = JSON.parse(localStorage.getItem('contactInfo'));
+if (formDetails) {
+  nameId.value = formDetails.name;
+  emailId.value = formDetails.email;
+  commentId.value = formDetails.comment;
 }
 
 buttonSubmit.addEventListener('submit', (event) => {
