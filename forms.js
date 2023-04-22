@@ -11,14 +11,13 @@ function emailError() {
   return errors;
 }
 
-function Validation() {
-  const errors = emailError();
-  if (errors.length === 0) {
-    return true;
-  }
+contactForm.onsubmit = function run() {
 
-  attention.innerHTML = `${errors.join('')}`;
-  return false;
-}
-
-contactForm.onsubmit = function run() { return Validation(); };
+    const errors = emailError();
+    if (errors.length === 0) {
+      return true;
+    }
+  
+    attention.innerHTML = `${errors.join('')}`;
+    return false;
+  };
