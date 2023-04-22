@@ -1,7 +1,7 @@
-const buttonSubmit = document.querySelector('.Collaboration');
 const nameId = document.getElementById('name');
 const emailId = document.getElementById('email');
 const commentId = document.getElementById('comment-box');
+const body = document.querySelector('body');
 
 const formDetails = JSON.parse(localStorage.getItem('contactInfo'));
 if (formDetails) {
@@ -10,7 +10,7 @@ if (formDetails) {
   commentId.value = formDetails.comment;
 }
 
-buttonSubmit.addEventListener('submit', (event) => {
+body.addEventListener('load', (event) => {
   event.preventDefault();
   const name = nameId.value;
   const email = emailId.value;
