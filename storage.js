@@ -3,7 +3,6 @@ const nameId = document.getElementById('name');
 const emailId = document.getElementById('email');
 const commentId = document.getElementById('comment-box');
 
-
 const formDetails = JSON.parse(localStorage.getItem('contactInfo'));
 if (formDetails) {
   nameId.value = formDetails.name;
@@ -16,7 +15,7 @@ buttonSubmit.addEventListener('submit', (event) => {
   const name = nameId.value;
   const email = emailId.value;
   const comment = commentId.value;
- 
+
   if (!name || !email || !comment) {
     return;
   }
