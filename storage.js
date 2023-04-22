@@ -1,29 +1,26 @@
 const nameId = document.getElementById('name');
 const emailId = document.getElementById('email');
 const commentId = document.getElementById('comment-box');
-const body = document.querySelector('body');
 
-const formDetails = JSON.parse(localStorage.getItem('contactInfo'));
-if (formDetails) {
-  nameId.value = formDetails.name;
-  emailId.value = formDetails.email;
-  commentId.value = formDetails.comment;
+function populateStorage() {
+  const formDetails = {
+    name: nameId.value,
+    email: emailId.value,
+    message: commentId.value,
+
+  };
+
+  localStorage.setItem('contactInfo', JSON.stringify(formDetails));
 }
 
-body.addEventListener('load', (event) => {
-  event.preventDefault();
-  const name = nameId.value;
-  const email = emailId.value;
-  const comment = commentId.value;
+nameId.addEventListener('input', populateStorage);
+emailId.addEventListener('input', populateStorage);
+commentId.addEventListener('input', populateStorage);
 
-  if (!name || !email || !comment) {
-    return;
-  }
-  // Store data on array//
-  const contactInfo = {
-    name,
-    email,
-    comment,
-  };
-  localStorage.setItem('contactInfo', JSON.stringify(contactInfo));
-});
+const contactInfo = JSON.parse(localStorage.getItem('contactInfo'));
+
+if (contactInfo) {
+  nameId.value = contactInfo.name;
+  emailId.value = contactInfo.email;
+  commentId.value = contactInfo.message;
+}
