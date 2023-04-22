@@ -20,7 +20,7 @@ buttonSubmit.addEventListener('submit', (event) => {
   if (!name || !email || !comment) {
     return;
   }
-  
+  // Store data on array//
   const contactInfo = {
     name,
     email,
