@@ -109,11 +109,13 @@
   }
 
   header.active .image1 {
-    filter: brightness(0) saturate(100%) invert(24%) sepia(80%) saturate(744%) hue-rotate(176deg) brightness(95%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(24%) sepia(80%) saturate(744%)
+      hue-rotate(176deg) brightness(95%) contrast(93%);
   }
 
   header.active .image2 {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(17%) saturate(463%) hue-rotate(326deg) brightness(104%) contrast(106%);
+    filter: brightness(0) saturate(100%) invert(79%) sepia(17%) saturate(463%)
+      hue-rotate(326deg) brightness(104%) contrast(106%);
   }
 
   .Intro {
@@ -139,6 +141,7 @@
     color: #1a2236;
     border: 1px solid #1a2236;
     background-color: white;
+    cursor: pointer;
   }
 
   .Collaboration:active {
@@ -661,18 +664,70 @@
     padding-left: 9rem;
   }
 
+  h1 {
+    font-size: 110px;
+    line-height: 110px;
+    padding-bottom: 2rem;
+  }
+
+  .Intro h1,
+  .Intro p {
+    position: relative;
+    overflow: hidden;
+    animation: revealingIn 2s 1s forwards;
+    color: transparent;
+  }
+
+  .Intro h1::after,
+  .Intro p::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffcc00;
+    animation: revealingOut 2s 1s forwards;
+  }
+
+  @keyframes revealingIn {
+    0% {
+      color: transparent;
+    }
+
+    100% {
+      color: black;
+    }
+  }
+
+  @keyframes revealingOut {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
   .headline-pic {
     position: relative;
     width: 50%;
     background-image: url(images/Thur.png);
     height: 54.813rem;
     margin-bottom: 13rem;
+    opacity: 0;
+    animation: revealHeadlinePic 2s 3s forwards;
   }
 
-  h1 {
-    font-size: 110px;
-    line-height: 110px;
-    padding-bottom: 2rem;
+  @keyframes revealHeadlinePic {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
   .Collaboration {
