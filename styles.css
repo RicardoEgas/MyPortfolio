@@ -628,6 +628,10 @@
     color: #1a2236;
   }
 
+  .nav-link a:hover {
+    color: #1c528a;
+  }
+
   .image1 {
     display: none;
   }
@@ -674,23 +678,33 @@
   .Intro p {
     position: relative;
     overflow: hidden;
-    animation: revealingIn 2s 1s forwards;
+    animation: revealingBlock 2s 3s forwards;
     color: transparent;
   }
 
-  .Intro h1::after,
-  .Intro p::after {
+  .Intro h1::after {
     content: "";
-    width: 100%;
+    width: 0%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: #ffcc00;
-    animation: revealingOut 2s 1s forwards;
+    background: #fdc357; /* Set background color for h1 */
+    animation: revealingIn 2s 1s forwards, revealingOut 2s 3s forwards;
+  }
+  
+  .Intro p::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #8cd9d9; /* Set background color for p */
+    animation: revealingIn 2s 1s forwards, revealingOut 2s 3s forwards;
   }
 
-  @keyframes revealingIn {
+  @keyframes revealingBlock {
     0% {
       color: transparent;
     }
@@ -700,14 +714,32 @@
     }
   }
 
+  @keyframes revealingIn {
+
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+  
   @keyframes revealingOut {
+  
     0% {
       transform: translateX(0);
     }
-
+  
     100% {
       transform: translateX(100%);
     }
+  
+  }
+
+  .Intro button {
+    opacity: 0;
+    animation: revealHeadlinePic 2s 3s forwards;
   }
 
   .headline-pic {
