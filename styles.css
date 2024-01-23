@@ -109,12 +109,14 @@
   }
 
   header.active .image1 {
-    filter: brightness(0) saturate(100%) invert(24%) sepia(80%) saturate(744%)
+    filter:
+      brightness(0) saturate(100%) invert(24%) sepia(80%) saturate(744%)
       hue-rotate(176deg) brightness(95%) contrast(93%);
   }
 
   header.active .image2 {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(17%) saturate(463%)
+    filter:
+      brightness(0) saturate(100%) invert(79%) sepia(17%) saturate(463%)
       hue-rotate(326deg) brightness(104%) contrast(106%);
   }
 
@@ -692,7 +694,7 @@
     background: #fdc357; /* Set background color for h1 */
     animation: revealingIn 2s 1s forwards, revealingOut 2s 3s forwards;
   }
-  
+
   .Intro p::after {
     content: "";
     width: 0%;
@@ -715,26 +717,23 @@
   }
 
   @keyframes revealingIn {
-
     0% {
       width: 0;
     }
-  
+
     100% {
       width: 100%;
     }
   }
-  
+
   @keyframes revealingOut {
-  
     0% {
       transform: translateX(0);
     }
-  
+
     100% {
       transform: translateX(100%);
     }
-  
   }
 
   .Intro button {
