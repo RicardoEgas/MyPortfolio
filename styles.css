@@ -131,12 +131,15 @@
   }
 
   .Collaboration {
+    text-decoration: none;
+    text-align: center;
     background-color: #1a2236;
     color: white;
     height: 3.125rem;
     font-size: 1rem;
     box-sizing: border-box;
     margin: 1rem 1rem;
+    line-height: 3.125rem;
   }
 
   .Collaboration:hover {
@@ -819,8 +822,9 @@
     width: 100%;
     background-color: #1a2236;
     height: 25rem;
-    outline: 5px groove #45474b;
+    outline: 5px ridge #45474b;
     outline-offset: -5px;
+    animation: increaseOutlineSize 2s infinite alternate;
   }
 
   .big-laptop img {
@@ -849,6 +853,7 @@
     justify-self: end;
     outline: 5px groove #45474b;
     outline-offset: -5px;
+    animation: floatAnimation 2s infinite alternate;
   }
 
   .grid2 {
@@ -920,6 +925,7 @@
     height: 100%;
     outline: 5px groove #45474b;
     outline-offset: -5px;
+    animation: floatAnimation 2s infinite alternate;
   }
 
   .grid5 {
@@ -934,6 +940,19 @@
     object-fit: contain;
     outline: 5px groove #45474b;
     outline-offset: -5px;
+    animation: floatAnimation 2s infinite alternate;
+  }
+
+  @keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(0);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    50% {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    }
   }
 
   .projects button:hover {
