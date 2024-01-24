@@ -739,7 +739,7 @@
     }
   }
 
-  .Intro button {
+  .Collaboration {
     opacity: 0;
     animation: revealHeadlinePic 2s 3s forwards;
   }
