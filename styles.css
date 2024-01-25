@@ -163,7 +163,7 @@
 
   .work {
     display: grid;
-    grid-template-rows: 21.375rem 21.375rem 21.375rem 21.375rem 21.375rem 21.375rem;
+    grid-template-rows: 23.375rem 21.375rem 21.375rem 21.375rem 21.375rem;
   }
 
   .work div {
@@ -228,6 +228,7 @@
     line-height: 1.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    margin-bottom: 1rem;
   }
 
   .projects button:hover {
