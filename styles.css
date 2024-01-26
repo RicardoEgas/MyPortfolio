@@ -48,6 +48,15 @@
     padding: 0;
   }
 
+  .font-links a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .Intro a {
+    margin: 1rem 1rem;
+  }
+
   .Menu.active .portfolio-links a {
     text-decoration: none;
     color: black;
@@ -132,15 +141,12 @@
   }
 
   .Collaboration {
-    text-decoration: none;
-    text-align: center;
     background-color: #1a2236;
     color: white;
     height: 3.125rem;
     font-size: 1rem;
     box-sizing: border-box;
-    margin: 1rem 1rem;
-    line-height: 3.125rem;
+    width: 100%;
   }
 
   .Collaboration:hover {
@@ -333,6 +339,7 @@
   .get-contact {
     background-color: #f9f9fa;
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   #name {
@@ -406,11 +413,6 @@
     justify-content: space-around;
     align-items: center;
     font-size: x-large;
-  }
-
-  .font-links a {
-    text-decoration: none;
-    color: white;
   }
 
   .image4 {
@@ -879,6 +881,10 @@
     width: 100%;
   }
 
+  .container-button button {
+    margin: 0 auto;
+  }
+
   .grid3 {
     background-color: #1a2236;
     width: 100%;
@@ -1100,8 +1106,9 @@
   }
 
   .container-button {
-    margin: auto 13rem;
+    display: block;
     margin-bottom: 10rem;
+    width: 100%;
   }
 
   .image6 {
