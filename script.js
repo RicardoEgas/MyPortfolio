@@ -61,7 +61,7 @@ const details = [
     description: 'Space Travelers is a demo web application that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. It uses real live data from the SpaceX API.',
     image: 'images/space-travelers-screenshot.png',
     technologies: ['REACT', 'Redux', 'API'],
-    liveVersion: '#',
+    liveVersion: 'https://65b7dbbe47764022e0ee437b--chimerical-dodol-b4247a.netlify.app/',
     source: 'https://github.com/RicardoEgas/Space-Travelers',
   },
 ];

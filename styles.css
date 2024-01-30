@@ -16,10 +16,12 @@
   .burger {
     padding: 1rem;
     cursor: pointer;
+    position: fixed;
+    z-index: 1000;
   }
 
   .Menu.active {
-    position: absolute;
+    position: fixed;
     display: inline;
     width: 100%;
     height: 100%;
@@ -29,6 +31,7 @@
     background-position-y: bottom;
     background-size: 100% auto;
     text-align: center;
+    z-index: 1000;
   }
 
   .Menu.active .burger {
@@ -625,6 +628,12 @@
   #header {
     border-bottom: 1px solid #dddfe6;
     height: 6.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
   }
 
   .Menu {
@@ -769,6 +778,7 @@
     margin-bottom: 13rem;
     opacity: 0;
     animation: revealHeadlinePic 2s 3s forwards;
+    margin-top: 6.25rem;
   }
 
   @keyframes revealHeadlinePic {
