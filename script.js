@@ -87,7 +87,7 @@ function displayModal(detail) {
       </ul>
       <div class="modal-image"><img src="${detail.image}" alt="project-image-desktop"></div>
       <div class="descript">${detail.description}</div>
-      <a href="${detail.liveVersion}" target="_blank"><button class="see-live">See Live <i class="fa-sharp fa-light fa-arrow-up-right-from-square"></i></button></a>
+      <a href="${detail.liveVersion}" target="_blank"><button class="see-live">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
       <a href="${detail.source}" target="_blank"><button class="see-source">See Source<i class="fa-brands fa-github"></i></button></a>
     </div>`;
 }
