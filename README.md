@@ -62,7 +62,7 @@ After you're finished please remove all the comments and instructions!
 
 
 
-My Portfolio is a project for Microverse which consists in completing the build of a mobile and Desktop page replicating a template from Figma.
+Welcome to a portfolio where the art of web development meets technical precision. Discover a showcase of projects demonstrating proficiency in HTML, CSS, JavaScript, and various frameworks, illustrating a dedication to delivering polished, functional websites.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -183,7 +183,7 @@ GitHub Pages
 
 - GitHub: [@githubhandle](https://github.com/RicardoEgas)
 - Twitter: [@twitterhandle](https://twitter.com/RjEgas)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ricardo-egas-952125136)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ricardo-egas)
 
 👤 **Evans Nyamekye**
 
@@ -202,8 +202,6 @@ GitHub Pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **[Animations]**
 - [ ] **[Dynamic rendering]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

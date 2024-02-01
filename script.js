@@ -61,7 +61,7 @@ const details = [
     description: 'Space Travelers is a demo web application that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. It uses real live data from the SpaceX API.',
     image: 'images/space-travelers-screenshot.png',
     technologies: ['REACT', 'Redux', 'API'],
-    liveVersion: '#',
+    liveVersion: 'https://65b7dbbe47764022e0ee437b--chimerical-dodol-b4247a.netlify.app/',
     source: 'https://github.com/RicardoEgas/Space-Travelers',
   },
 ];
@@ -87,8 +87,8 @@ function displayModal(detail) {
       </ul>
       <div class="modal-image"><img src="${detail.image}" alt="project-image-desktop"></div>
       <div class="descript">${detail.description}</div>
-      <a href="${detail.liveVersion}"><button class="see-live">See Live <i class="fa-sharp fa-light fa-arrow-up-right-from-square"></i></button></a>
-      <a href="${detail.source}"><button class="see-source">See Source<i class="fa-brands fa-github"></i></button></a>
+      <a href="${detail.liveVersion}" target="_blank"><button class="see-live">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+      <a href="${detail.source}" target="_blank"><button class="see-source">See Source<i class="fa-brands fa-github"></i></button></a>
     </div>`;
 }
 
