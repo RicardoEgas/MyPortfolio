@@ -708,7 +708,7 @@
   .Intro p {
     position: relative;
     overflow: hidden;
-    animation: revealingBlock 2s 3s forwards;
+    animation: revealingBlock 2s 2s forwards;
     color: transparent;
   }
 
@@ -720,7 +720,7 @@
     top: 0;
     left: 0;
     background: #fdc357; /* Set background color for h1 */
-    animation: revealingIn 2s 1s forwards, revealingOut 2s 3s forwards;
+    animation: revealingIn 2s 0s forwards, revealingOut 2s 2s forwards;
   }
 
   .Intro p::after {
@@ -731,7 +731,7 @@
     top: 0;
     left: 0;
     background: #8cd9d9; /* Set background color for p */
-    animation: revealingIn 2s 1s forwards, revealingOut 2s 3s forwards;
+    animation: revealingIn 2s 0s forwards, revealingOut 2s 2s forwards;
   }
 
   @keyframes revealingBlock {
@@ -767,7 +767,7 @@
   .Collaboration {
     width: 15.875rem;
     opacity: 0;
-    animation: revealHeadlinePic 2s 3s forwards;
+    animation: revealHeadlinePic 2s 2s forwards;
   }
 
   .headline-pic {
@@ -777,7 +777,7 @@
     height: 54.813rem;
     margin-bottom: 13rem;
     opacity: 0;
-    animation: revealHeadlinePic 2s 3s forwards;
+    animation: revealHeadlinePic 2s 2s forwards;
     margin-top: 6.25rem;
   }
 
@@ -870,11 +870,16 @@
     grid-template-rows: auto;
   }
 
+  .image-wrapper1 {
+    position: relative;
+    display: inline-block;
+    align-self: end;
+    justify-self: end;
+  }
+
   .grid1 {
     height: 16rem;
     width: 100%;
-    align-self: end;
-    justify-self: end;
     outline: 5px groove #45474b;
     outline-offset: -5px;
     animation: floatAnimation 2s infinite alternate;
@@ -957,6 +962,11 @@
     position: relative;
   }
 
+  .image-wrapper2 {
+    position: relative;
+    display: inline-block;
+  }
+
   .grid4 {
     width: 100%;
     height: 100%;
@@ -985,12 +995,31 @@
     outline: 5px groove #45474b;
     outline-offset: -5px;
     animation: floatAnimation 2s infinite alternate;
-    transition: filter 0.3s ease;
-    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
     cursor: pointer;
   }
 
-  .grid7:hover {
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: #1a2236;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .image-wrapper1:hover .image-text {
+    opacity: 1;
+  }
+
+  .image-wrapper2:hover .image-text {
+    opacity: 1;
+  }
+
+  .image-wrapper2:hover .grid7 {
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
   }
 
