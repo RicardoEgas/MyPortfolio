@@ -52,8 +52,8 @@ const details = [
     description: 'Engaged in a collaborative project integrating an external API to retrieve comprehensive information, including pictures, names, types, IDs, statuses, and genders of characters from the Rick and Morty series.',
     image: 'images/Rick&Morty-screenshot.png',
     technologies: ['Html/CSS', 'API', 'Javascript'],
-    liveVersion: 'https://ochiengsteven.github.io/Module2-Capstone/dist/',
-    source: 'https://github.com/ochiengsteven/Module2-Capstone',
+    liveVersion: 'https://rick-morty-api-characters.netlify.app/',
+    source: 'https://github.com/RicardoEgas/Rick-Morty',
   },
   {
     id: 5,
